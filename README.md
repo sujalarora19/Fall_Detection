@@ -29,3 +29,40 @@ A real-time fall detection system designed for the elderly using an MPU6050 sens
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/sujalarora19/Fall_Detection.git
+2. **Open the project in Arduino IDE**:
+   - Install the necessary libraries: `Wire.h`, `WiFi.h`, `BlynkSimpleEsp32.h`.
+
+3. **Update WiFi credentials in the code**:
+   ```cpp
+   char ssid[] = "Your_SSID";
+   char pass[] = "Your_PASSWORD";
+4. **Upload the code to your NodeMCU (ESP32).**:
+
+## How It Works
+
+- The **MPU6050 sensor** collects acceleration and gyroscope data.
+- The **NodeMCU** processes the data to detect a fall based on defined thresholds.
+- If a fall is detected, an alert is sent to the **Blynk app**, and an **LED** and **buzzer** are activated.
+
+## Important Notes
+
+- Ensure the **MPU6050 sensor** is calibrated before using it.
+- The sensitivity of the fall detection can be adjusted by changing the threshold values in the code.
+
+## Libraries and Dependencies
+
+Ensure you have the following libraries installed in your Arduino IDE:
+
+- **Wire.h** - For I2C communication.
+- **WiFi.h** - To connect to WiFi.
+- **BlynkSimpleEsp32.h** - For Blynk platform integration.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Thanks to the developers of all open-source libraries and tools used in this project.
+- Special thanks to the Blynk community for their support and guidance.
+
