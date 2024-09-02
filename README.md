@@ -9,6 +9,9 @@ A real-time fall detection system designed for the elderly using an MPU6050 sens
 - **Wearable Integration**: Designed to be integrated into a wearable jacket for ease of use.
 - **Adjustable Sensitivity**: Sensitivity can be adjusted based on the user’s needs.
 
+## Why is it Different
+- **Pre-Impact Detection**: The system detects falls before the person makes contact with the ground, enabling potential integration with airbag mechanisms to proactively prevent injuries.
+
 ## Hardware Components
 
 - **NodeMCU (ESP32)**
